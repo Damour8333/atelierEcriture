@@ -206,3 +206,40 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/Damour8333/atelierEcriture.git
 git push -u origin main
+
+Non, ce n'est pas un doublon, en fait ces deux éléments servent des objectifs différents, et tu peux les utiliser ensemble pour rendre ton site encore plus professionnel et fonctionnel.
+
+### 1️⃣ **Shadcn/ui ou Radix UI**  
+Cela va te permettre d’ajouter des composants **UI (interface utilisateur)** élégants et modernes à ton site. C’est un moyen d’améliorer le design de manière cohérente et rapide. Par exemple, tu peux ajouter :
+- **Des boutons stylisés**
+- **Des modals (fenêtres pop-up)**
+- **Des cartes** pour afficher des éléments comme des notes ou des textes
+- **Des menus déroulants**
+
+Ces bibliothèques **n'affectent pas les données** du site, elles servent uniquement à rendre le design plus joli et interactif.
+
+**Exemple d'usage de Shadcn/ui** :
+- Ajouter une **card** pour chaque note
+- Ajouter un **modal** pour créer un nouveau texte
+- Ajouter des **tabs** pour naviguer entre les différentes sections (Notes, Textes, Références)
+
+### 2️⃣ **Ajouter un CMS**  
+Un **CMS (Content Management System)**, comme **Contentful**, **Sanity** ou **Strapi**, te permet de gérer **le contenu de ton site de manière dynamique**. Tu n’auras plus à modifier directement les fichiers source pour ajouter des textes ou des références ; tu pourras tout gérer depuis une interface web.  
+**Un CMS est utile si** :
+- Tu souhaites modifier fréquemment le contenu du site sans toucher au code.
+- Tu veux permettre à d'autres personnes de contribuer au site facilement.
+
+### Pourquoi ce n'est pas un doublon ?
+- **Shadcn/UI ou Radix UI** : ça te sert à rendre ton site plus beau et interactif.
+- **CMS** : ça te permet de **gérer le contenu** du site plus facilement et dynamiquement. 
+
+Tu peux **ajouter un CMS** même après avoir utilisé un UI Kit. Par exemple, tu pourrais utiliser **Shadcn/ui** pour améliorer l'interface, tout en récupérant les données dynamiquement d'un CMS.
+
+---
+
+### Exemple d'utilisation ensemble :
+
+1. **UI Kit** pour la **mise en page** (par exemple, ajouter une belle liste de notes).
+2. **CMS** pour **gérer les notes**, les textes, et les références sans toucher au code.
+
+Si tu veux, je peux te guider dans l'installation du **CMS** après avoir amélioré le design avec **Shadcn/ui**. Qu’en penses-tu ? 😊
