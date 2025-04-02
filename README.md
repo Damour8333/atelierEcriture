@@ -243,3 +243,88 @@ Tu peux **ajouter un CMS** même après avoir utilisé un UI Kit. Par exemple, t
 2. **CMS** pour **gérer les notes**, les textes, et les références sans toucher au code.
 
 Si tu veux, je peux te guider dans l'installation du **CMS** après avoir amélioré le design avec **Shadcn/ui**. Qu’en penses-tu ? 😊
+
+Super, tu as installé **Shadcn/ui** ! 🎉 Maintenant, tu peux commencer à utiliser les composants élégants qu’il fournit pour améliorer le design de ton site.
+
+### 🌟 Comment utiliser Shadcn/ui ?
+
+1. **Vérifier l'installation**  
+   Si tu l’as installé via `npx shadcn-ui@latest init`, le processus devrait avoir ajouté les dépendances nécessaires à ton projet. Assure-toi que tout est en place en vérifiant les fichiers ajoutés dans ton projet.
+
+2. **Ajouter des composants à ta page**
+   Voici un exemple de comment intégrer un **composant card** à ta page, ou un **menu de navigation** pour ajouter des interactions.
+
+#### Exemple : Ajouter une carte (card) pour chaque section
+Tu peux transformer une de tes sections en une "carte" interactive avec **Shadcn/ui**. Voici un petit exemple pour une **section Notes**.
+
+##### **Composant Card :**
+```tsx
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@shadcn/ui';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900 p-8 sm:p-16">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold">Les Recettes Littéraires de Joël Zanoui</h1>
+        <p className="text-lg text-gray-700 mt-2">Atelier d'écriture depuis 25 ans à Bordeaux et ailleurs</p>
+      </header>
+
+      <main className="max-w-4xl mx-auto space-y-12">
+        {/* Carte pour la section Notes */}
+        <Card className="bg-white shadow-lg rounded-lg p-6">
+          <CardHeader>
+            <CardTitle className="text-2xl font-semibold">📝 Mes Notes</CardTitle>
+            <CardDescription className="text-gray-700">(Ici, tu pourras ajouter tes notes et idées de travail.)</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <p className="mt-4 text-gray-700">Ajoute ici tes notes et idées !</p>
+          </CardContent>
+        </Card>
+
+        {/* Autres sections comme Textes, Références, etc. */}
+      </main>
+    </div>
+  );
+}
+```
+
+Dans cet exemple, nous avons utilisé **Shadcn/ui** pour créer une carte pour la section **Mes Notes**. C’est un bon moyen de rendre tes sections plus visuellement attrayantes.
+
+---
+
+### 🌈 Ajouter un **Menu de Navigation** avec **Shadcn/ui**
+Si tu veux ajouter un **menu de navigation** élégant, voici un exemple de base avec un **Dropdown** :
+
+```tsx
+import { DropdownMenu, DropdownMenuItem, DropdownMenuTrigger } from '@shadcn/ui';
+
+export default function Header() {
+  return (
+    <header className="flex justify-between items-center bg-gray-800 p-4 text-white">
+      <h1 className="text-xl font-bold">Atelier d'Écriture</h1>
+      <DropdownMenu>
+        <DropdownMenuTrigger className="bg-gray-700 px-4 py-2 rounded-lg cursor-pointer">
+          Menu
+        </DropdownMenuTrigger>
+        <div className="bg-white p-4 rounded-lg">
+          <DropdownMenuItem>Home</DropdownMenuItem>
+          <DropdownMenuItem>Notes</DropdownMenuItem>
+          <DropdownMenuItem>Textes</DropdownMenuItem>
+          <DropdownMenuItem>Références Littéraires</DropdownMenuItem>
+        </div>
+      </DropdownMenu>
+    </header>
+  );
+}
+```
+
+### 🎨 Améliorer l'esthétique avec des **Tailwind Classes**
+N’hésite pas à jouer avec les classes de **Tailwind CSS** que tu as déjà dans ton projet pour personnaliser les couleurs, les espacements, les ombres, etc.
+
+---
+
+### 🚀 Prochaine étape
+- **Essaye d'intégrer un composant** comme la carte ou le menu dans ta page pour voir comment ça fonctionne.
+- **Ajoute plus de composants** (comme des **modals**, **formulaires**, etc.) pour rendre ton site plus dynamique.
+
+Tu veux que je t’aide à personnaliser d’autres éléments ou que je t’explique plus en détail l’utilisation de Shadcn/ui ? 😄
